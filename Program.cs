@@ -6,7 +6,12 @@ namespace AbstractClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var dog = new Dog();
+
+            Console.WriteLine("What is your dog's name?");
+            dog.SetName(Console.ReadLine());
+            dog.GetName();
+            dog.Eat();
         }
     }
 }

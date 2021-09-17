@@ -1,7 +1,21 @@
-﻿namespace AbstractClass
+﻿using System;
+
+namespace AbstractClass
 {
-    public class Animal
+    public abstract class Animal
     {
+        string _name;
+
+        public void SetName(string name)
+        {
+            _name = name;
+        }
         
+        public void GetName()
+        {
+            Console.WriteLine(_name);
+        }
+
+        public abstract void Eat();
     }
 }
